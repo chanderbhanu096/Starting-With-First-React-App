@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from './App';
+// import App from './App';
+import Users from './Users';
 import * as serviceWorker from "./serviceWorker";
 //import React, { Component } from 'react';
 //class ContactList extends Component {}
@@ -10,19 +11,19 @@ import * as serviceWorker from "./serviceWorker";
   Option for the that option one doesn't need to import*/
 
 // Rendering class/ component
-class ContactList extends React.Component {
-  render() {
-    const people = [{ name: "ankush" }, { name: "bhanu" }, { name: "bholu" }];
+// class ContactList extends React.Component {
+//   render() {
+//     const people = [{ name: "ankush" }, { name: "bhanu" }, { name: "bholu" }];
 
-    return (
-      <ol>
-        {people.map((person) => (
-          <li key={person.name}>{person.name}</li>
-        ))}
-      </ol>
-    );
-  }
-}
+//     return (
+//       <ol>
+//         {people.map((person) => (
+//           <li key={person.name}>{person.name}</li>
+//         ))}
+//       </ol>
+//     );
+//   }
+// }
 // const element = React.createElement('div',null,'hello how are you');
 
 /* const list = React.createElement('ol',null,React.createElement('li',null,'Apple'),
@@ -50,7 +51,7 @@ ReactDOM.render(
 
   // </React.StrictMode>,
   
-  <App />,
+  <Users/>,
   document.getElementById("root")
 );
 
